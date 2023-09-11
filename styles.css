@@ -1,0 +1,246 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 36px;
+}
+
+.logo p {
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero section with background video */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5); /* Add an overlay to the video */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #777;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Services section */
+.services {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+/* Update the service images */
+.service img {
+  width: 200px; /* Set the desired fixed width */
+  height: 200px; /* Set the desired fixed height */
+  border-radius: 50%; /* Make the images round */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  object-position: center; /* Center the image within the circle */
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Team section */
+.team {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.barber {
+  margin-bottom: 40px;
+}
+
+.barber img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.barber h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.barber p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Contact section */
+.contact {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+/* Footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
